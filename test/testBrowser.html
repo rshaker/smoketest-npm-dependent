@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browser Test</title>
+    <script src="https://unpkg.com/@rshaker/smoketest-npm-dependent"></script>
+    <script>
+        // Assuming your library exposes a `farewell` function
+        function testFarewell() {
+            const result = MyLibrary.farewell('Browser');
+            if (result === 'Hello, Node! Adios, Node!') {
+                alert(`Browser test passed successfully.`);
+            } else {
+                alert(`Browser test failed.`);
+            }
+        }
+    </script>
+</head>
+<body onload="testFarewell();">
+</body>
+</html>

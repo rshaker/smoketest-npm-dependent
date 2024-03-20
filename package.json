@@ -1,0 +1,42 @@
+{
+    "name": "@rshaker/smoketest-npm-dependent",
+    "version": "1.0.0",
+    "description": "A package with dependency on smoketest-npm.",
+    "license": "MIT",
+    "author": {
+        "name": "Ron Shaker",
+        "email": "rshaker@gmail.com",
+        "url": "https://github.com/rshaker"
+    },
+    "bugs": {
+        "url": "https://github.com/rshaker/smoketest-npm-dependent/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rshaker/smoketest-npm-dependent.git"
+    },
+    "keywords": [
+        "smoketest",
+        "webpack",
+        "typescript",
+        "node",
+        "npm",
+        "umd"
+    ],
+    "main": "dist/bundle.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "webpack",
+        "start": "node dist/bundle.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.4.2",
+        "webpack": "^5.90.3",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "@rshaker/smoketest-npm": "^1.2.0"
+    }
+}
