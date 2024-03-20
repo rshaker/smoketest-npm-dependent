@@ -7,10 +7,10 @@
         // Assuming your library exposes a `farewell` function
         function testFarewell() {
             const result = MyLibrary.farewell('Browser');
-            if (result === 'Hello, Node! Adios, Node!') {
+            if (result === 'Hello, Browser! Adios, Browser!') {
                 alert(`Browser test passed successfully.`);
             } else {
-                alert(`Browser test failed.`);
+                alert(`Browser test failed. ${result}`);
             }
         }
     </script>

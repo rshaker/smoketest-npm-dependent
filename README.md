@@ -2,7 +2,7 @@
 
 <img width="250px" src="assets/tent2.png">
 
-A package that depends on smoketest-npm.
+A package that depends on @rshaker/smoketest-npm.
 
 ## Usage
 
